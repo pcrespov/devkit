@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use deploytool in a project::
+To use devkit in a project::
 
-	import deploytool
+	import devkit

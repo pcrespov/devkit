@@ -22,7 +22,7 @@ if os.getenv('SPELLCHECK'):
 
 source_suffix = '.rst'
 master_doc = 'index'
-project = 'deploytool'
+project = 'devkit'
 year = '2018'
 author = 'Pedro Crespo'
 copyright = '{0}, {1}'.format(year, author)
@@ -31,14 +31,14 @@ version = release = '0.1.0'
 pygments_style = 'trac'
 templates_path = ['.']
 extlinks = {
-    'issue': ('https://github.com/pcrespov/python-deploytool/issues/%s', '#'),
-    'pr': ('https://github.com/pcrespov/python-deploytool/pull/%s', 'PR #'),
+    'issue': ('https://github.com/pcrespov/devkit/issues/%s', '#'),
+    'pr': ('https://github.com/pcrespov/devkit/pull/%s', 'PR #'),
 }
 import sphinx_py3doc_enhanced_theme
 html_theme = "sphinx_py3doc_enhanced_theme"
 html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
 html_theme_options = {
-    'githuburl': 'https://github.com/pcrespov/python-deploytool/'
+    'githuburl': 'https://github.com/pcrespov/devkit/'
 }
 
 html_use_smartypants = True

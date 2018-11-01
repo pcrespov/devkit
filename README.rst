@@ -16,51 +16,51 @@ Overview
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
 
-.. |docs| image:: https://readthedocs.org/projects/python-deploytool/badge/?style=flat
-    :target: https://readthedocs.org/projects/python-deploytool
+.. |docs| image:: https://readthedocs.org/projects/devkit/badge/?style=flat
+    :target: https://readthedocs.org/projects/devkit
     :alt: Documentation Status
 
 
-.. |travis| image:: https://travis-ci.org/pcrespov/python-deploytool.svg?branch=master
+.. |travis| image:: https://travis-ci.org/pcrespov/devkit.svg?branch=master
     :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/pcrespov/python-deploytool
+    :target: https://travis-ci.org/pcrespov/devkit
 
-.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/pcrespov/python-deploytool?branch=master&svg=true
+.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/pcrespov/devkit?branch=master&svg=true
     :alt: AppVeyor Build Status
-    :target: https://ci.appveyor.com/project/pcrespov/python-deploytool
+    :target: https://ci.appveyor.com/project/pcrespov/devkit
 
-.. |requires| image:: https://requires.io/github/pcrespov/python-deploytool/requirements.svg?branch=master
+.. |requires| image:: https://requires.io/github/pcrespov/devkit/requirements.svg?branch=master
     :alt: Requirements Status
-    :target: https://requires.io/github/pcrespov/python-deploytool/requirements/?branch=master
+    :target: https://requires.io/github/pcrespov/devkit/requirements/?branch=master
 
-.. |codecov| image:: https://codecov.io/github/pcrespov/python-deploytool/coverage.svg?branch=master
+.. |codecov| image:: https://codecov.io/github/pcrespov/devkit/coverage.svg?branch=master
     :alt: Coverage Status
-    :target: https://codecov.io/github/pcrespov/python-deploytool
+    :target: https://codecov.io/github/pcrespov/devkit
 
-.. |version| image:: https://img.shields.io/pypi/v/simcore-deploy-tool.svg
+.. |version| image:: https://img.shields.io/pypi/v/devkit.svg
     :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/simcore-deploy-tool
+    :target: https://pypi.python.org/pypi/devkit
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/pcrespov/python-deploytool/v0.1.0.svg
+.. |commits-since| image:: https://img.shields.io/github/commits-since/pcrespov/devkit/v0.1.0.svg
     :alt: Commits since latest release
-    :target: https://github.com/pcrespov/python-deploytool/compare/v0.1.0...master
+    :target: https://github.com/pcrespov/devkit/compare/v0.1.0...master
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/simcore-deploy-tool.svg
+.. |wheel| image:: https://img.shields.io/pypi/wheel/devkit.svg
     :alt: PyPI Wheel
-    :target: https://pypi.python.org/pypi/simcore-deploy-tool
+    :target: https://pypi.python.org/pypi/devkit
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/simcore-deploy-tool.svg
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/devkit.svg
     :alt: Supported versions
-    :target: https://pypi.python.org/pypi/simcore-deploy-tool
+    :target: https://pypi.python.org/pypi/devkit
 
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/simcore-deploy-tool.svg
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/devkit.svg
     :alt: Supported implementations
-    :target: https://pypi.python.org/pypi/simcore-deploy-tool
+    :target: https://pypi.python.org/pypi/devkit
 
 
 .. end-badges
 
-Toolkit to taid deployment of simcore
+toolkit to aid development of simcore
 
 * Free software: MIT license
 
@@ -69,13 +69,13 @@ Installation
 
 ::
 
-    pip install simcore-deploy-tool
+    pip install devkit
 
 Documentation
 =============
 
 
-https://python-deploytool.readthedocs.io/
+https://devkit.readthedocs.io/
 
 
 Development

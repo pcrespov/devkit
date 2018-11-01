@@ -8,7 +8,7 @@ little bit helps, and credit will always be given.
 Bug reports
 ===========
 
-When `reporting a bug <https://github.com/pcrespov/python-deploytool/issues>`_ please include:
+When `reporting a bug <https://github.com/pcrespov/devkit/issues>`_ please include:
 
     * Your operating system name and version.
     * Any details about your local setup that might be helpful in troubleshooting.
@@ -17,14 +17,14 @@ When `reporting a bug <https://github.com/pcrespov/python-deploytool/issues>`_ p
 Documentation improvements
 ==========================
 
-deploytool could always use more documentation, whether as part of the
-official deploytool docs, in docstrings, or even on the web in blog posts,
+devkit could always use more documentation, whether as part of the
+official devkit docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Feature requests and feedback
 =============================
 
-The best way to send feedback is to file an issue at https://github.com/pcrespov/python-deploytool/issues.
+The best way to send feedback is to file an issue at https://github.com/pcrespov/devkit/issues.
 
 If you are proposing a feature:
 
@@ -35,13 +35,13 @@ If you are proposing a feature:
 Development
 ===========
 
-To set up `python-deploytool` for local development:
+To set up `devkit` for local development:
 
-1. Fork `python-deploytool <https://github.com/pcrespov/python-deploytool>`_
+1. Fork `devkit <https://github.com/pcrespov/devkit>`_
    (look for the "Fork" button).
 2. Clone your fork locally::
 
-    git clone git@github.com:your_name_here/python-deploytool.git
+    git clone git@github.com:your_name_here/devkit.git
 
 3. Create a branch for local development::
 
@@ -74,7 +74,7 @@ For merging, you should:
 4. Add yourself to ``AUTHORS.rst``.
 
 .. [1] If you don't have all the necessary python versions available locally you can rely on Travis - it will
-       `run the tests <https://travis-ci.org/pcrespov/python-deploytool/pull_requests>`_ for each change you add in the pull request.
+       `run the tests <https://travis-ci.org/pcrespov/devkit/pull_requests>`_ for each change you add in the pull request.
 
        It will be slower though ...
 

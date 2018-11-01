@@ -24,17 +24,16 @@ def read(*names, **kwargs):
 
 
 setup(
-    name='simcore-deploy-tool',
+    name='devkit',
     version='0.1.0',
     license='MIT license',
-    description='Toolkit to taid deployment of simcore',
+    description='toolkit to aid development of simcore',
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
     ),
     author='Pedro Crespo',
-    author_email='no@email.com',
-    url='https://github.com/pcrespov/python-deploytool',
+    url='https://github.com/pcrespov/devkit',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -77,7 +76,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'simcore-deploy-tool = deploytool.cli:main',
+            'devkit = devkit.cli:main',
         ]
     },
 )
