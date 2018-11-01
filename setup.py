@@ -5,15 +5,20 @@ from __future__ import print_function
 
 import io
 import re
+import sys
 from glob import glob
 from os.path import basename
 from os.path import dirname
 from os.path import join
 from os.path import splitext
 
+from typing import List
+from pathlib import Path
 from setuptools import find_packages
 from setuptools import setup
 
+CURRENT_DIR = Path(sys.argv[0] if __name__ == "__main__" else __file__).resolve().parent
+COMMENT = re.compile(r'^\s*#')
 
 def read(*names, **kwargs):
     with io.open(
@@ -21,6 +26,17 @@ def read(*names, **kwargs):
         encoding=kwargs.get('encoding', 'utf8')
     ) as fh:
         return fh.read()
+
+def list_packages(reqpath: Path) -> List[str]:
+    pkg_names = []
+    with reqpath.open() as f:
+        pkg_names = [line.strip() for line in f.readlines() if not COMMENT.match(line)]
+    return pkg_names
+
+
+requirements = list_packages(CURRENT_DIR / 'requirements.txt')
+setup_requirements = ['pytest-runner', ]
+test_requirements = list_packages(CURRENT_DIR / 'tests' / 'requirements.txt')
 
 
 setup(
@@ -41,34 +57,25 @@ setup(
     zip_safe=False,
     classifiers=[
         # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: Unix',
         'Operating System :: POSIX',
         'Operating System :: Microsoft :: Windows',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: Implementation :: CPython',
-        'Programming Language :: Python :: Implementation :: PyPy',
-        # uncomment if you test on these interpreters:
-        # 'Programming Language :: Python :: Implementation :: IronPython',
-        # 'Programming Language :: Python :: Implementation :: Jython',
-        # 'Programming Language :: Python :: Implementation :: Stackless',
         'Topic :: Utilities',
     ],
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',
     ],
-    install_requires=[
-        'click',
-        # eg: 'aspectlib==1.1.1', 'six>=1.7',
-    ],
+    install_requires=requirements,
+    setup_requires=setup_requirements,
+    python_requires='>=3.6',
+    test_suite='tests',
+    tests_require=test_requirements,
     extras_require={
         # eg:
         #   'rst': ['docutils>=0.11'],
