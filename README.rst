@@ -74,6 +74,7 @@ Installation
 Documentation
 =============
 
+This is a toolkit intended to aid the development of osparc-simcore
 
 https://devkit.readthedocs.io/
 
