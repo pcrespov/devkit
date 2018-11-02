@@ -16,10 +16,10 @@ Overview
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
 
-.. |docs| image:: https://readthedocs.org/projects/devkit/badge/?style=flat
-    :target: https://readthedocs.org/projects/devkit
-    :alt: Documentation Status
 
+..  |docs| image:: https://readthedocs.org/projects/simcore-devkit/badge/?version=latest
+    :target: https://simcore-devkit.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
 
 .. |travis| image:: https://travis-ci.org/pcrespov/devkit.svg?branch=master
     :alt: Travis-CI Build Status
